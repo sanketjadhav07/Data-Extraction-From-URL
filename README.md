@@ -17,7 +17,11 @@ The project leverages popular libraries such as `BeautifulSoup` for web scraping
 ## Libraries
 
  Pandas
+ 
  requests
+ 
  beautifulsoup4
+ 
  nltk
+ 
  openpyxl
