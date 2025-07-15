@@ -1,25 +1,27 @@
-Data Extraction From URL - Public
-Overview
-This project automates extraction of article titles and text from a list of URLs, conducts detailed text and sentiment analysis on the fetched content, and exports the results to an Excel file. It leverages Python libraries such as requests, BeautifulSoup, and nltk for data collection and natural language processing.
+# Data Extraction from URL with Text Analysis
 
-Features
-Fetches content (title and text) from web articles given their URLs.
+## Overview
 
-Computes text statistics including sentiment scores, readability indexes, and linguistic features.
+The **Data Extraction from URL with Text Analysis** project is a Python-based tool designed to extract article content from specified URLs and perform in-depth text analysis. This tool is particularly useful for researchers, data analysts, and developers interested in sentiment analysis, readability metrics, and content summarization.
 
-Processes multiple URLs in batch using an input Excel file.
+The project leverages popular libraries such as `BeautifulSoup` for web scraping and `NLTK` for natural language processing, providing a comprehensive solution for analyzing textual data from online sources.
 
-Outputs all results into a structured Excel file for further analysis or reporting.
+## Features
 
-Requirements
-Python 3.x
+- **Web Scraping**: Efficiently extracts article titles and content from a list of URLs.
+- **Sentiment Analysis**: Utilizes NLTK's VADER sentiment analysis tool to evaluate the emotional tone of the text.
+- **Text Complexity Metrics**: Calculates various readability and complexity metrics, including:
+  - FOG Index
+  - Average Sentence Length
+  - Percentage of Complex Words
+  - Word Count and Syllables per Word
+- **Excel Integration**: Reads input from and writes output to Excel files, making it easy to manage data.
+- **Error Handling**: Robust handling of HTTP requests to manage inaccessible URLs gracefully.
 
-Libraries:
+## Libraries
 
-pandas
-
+Pandas
 requests
-
 beautifulsoup4
-
 nltk
+openpyxl
