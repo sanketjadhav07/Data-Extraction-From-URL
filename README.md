@@ -2,26 +2,20 @@
 
 ## Overview
 
-The **Data Extraction from URL with Text Analysis** project is a Python-based tool designed to extract article content from specified URLs and perform in-depth text analysis. This tool is particularly useful for researchers, data analysts, and developers interested in sentiment analysis, readability metrics, and content summarization.
-
-The project leverages popular libraries such as `BeautifulSoup` for web scraping and `NLTK` for natural language processing, providing a comprehensive solution for analyzing textual data from online sources.
+The **Data Extraction From URL** project is designed to extract article titles and text from specified URLs and perform sentiment analysis on the extracted text. The project utilizes web scraping techniques to gather data and natural language processing (NLP) to analyze the sentiment and complexity of the text. The results are then saved to an Excel file for further analysis.
 
 ## Features
 
-- **Web Scraping**: Efficiently extracts article titles and content from a list of URLs.
-- **Sentiment Analysis**: Utilizes NLTK's VADER sentiment analysis tool to evaluate the emotional tone of the text.
-- **Text Complexity Metrics**: Calculates various readability and complexity metrics.
-- **Excel Integration**: Reads input from and writes output to Excel files, making it easy to manage data.
-- **Error Handling**: Robust handling of HTTP requests to manage inaccessible URLs gracefully.
+- **Web Scraping**: Extract article titles and content from provided URLs using BeautifulSoup.
+- **Sentiment Analysis**: Analyze the sentiment of the extracted text using NLTK's Sentiment Intensity Analyzer.
+- **Text Complexity Metrics**: Calculate various metrics such as average sentence length, percentage of complex words, FOG index, and more.
+- **Input/Output Handling**: Read input data from an Excel file and save the results to another Excel file.
 
-## Libraries
+## Technologies Used
 
- Pandas
- 
- requests
- 
- beautifulsoup4
- 
- nltk
- 
- openpyxl
+- Python
+- Pandas
+- Requests
+- BeautifulSoup
+- NLTK
+- OpenPyXL
